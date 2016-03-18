@@ -12,7 +12,7 @@ screen = pygame.display.set_mode((size))  # , pygame.FULLSCREEN)
 pygame.display.set_caption("GO_V.2")
 done = False
 clock = pygame.time.Clock()
-# Nothing to change up there
+# Nothing to change up there 
 
 def grids():
     for x in range(0, 950, 40):

@@ -1,4 +1,3 @@
-# test number 2
 import pygame
 
 # Define some colors

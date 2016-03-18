@@ -7,21 +7,17 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 BLUE = (20, 173, 224)
 
-pygame.init()
-# Set the width and height of the screen [width, height]
-size = (760, 760)
+pygame.init()size = (760, 760)
 screen = pygame.display.set_mode((size))  # , pygame.FULLSCREEN)
-pygame.display.set_caption("GO!")
-# Loop until the user clicks the close button.
+pygame.display.set_caption("GO_V.2")
 done = False
-# Used to manage how fast the screen updates
 clock = pygame.time.Clock()
+# Nothing to change up there
 
-
-def trainerLines():
+def grids():
     for x in range(0, 950, 40):
         pygame.draw.line(screen, BLACK, [x, 0], [x, 950], 2)
-    for y in range(0, 950, 40):
+    for y in range(0, 950, 40): 
         pygame.draw.line(screen, BLACK, [0, y], [950, y], 2)
 
 
@@ -82,13 +78,9 @@ while not done:
     if (circle is True):
         drawCircle(mouse_x, mouse_y, colour)
 
-    trainerLines()
+    grids()
     pygame.display.flip()
 
-    clock.tick(9999999999999999999999999999999999999999999999)
+    clock.tick(60)
 
 pygame.quit()
-
-'''
-sdfdsf
-'''
